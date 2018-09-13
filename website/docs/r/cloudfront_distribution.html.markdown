@@ -252,7 +252,8 @@ of several sub-resources - these resources are laid out below.
     either for a cache behavior or for the default cache behavior.
 
   * `trusted_signers` (Optional) - The AWS accounts, if any, that you want to
-    allow to create signed URLs for private content.
+    allow to create signed URLs for private content. Specify `[self]` to set the
+    account that created the distribution as a trusted signer.
 
   * `viewer_protocol_policy` (Required) - Use this element to specify the
     protocol that users can use to access the files in the origin specified by
